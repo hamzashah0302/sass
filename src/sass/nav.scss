@@ -1,0 +1,102 @@
+
+.navBar {
+   padding-left: 2rem;
+   background-color: rgba(46, 35, 35, 0.9);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 5rem;
+   flex-wrap: nowrap;
+   font-family: "Poppins";
+   font-weight: 500;
+   .left{
+      .li {
+         margin-left: 1rem;
+         a{
+            color: white;
+         }
+      }
+      .line {
+         margin-top: 0.5rem;
+         color: white;
+      }
+      
+   }
+   .right{
+      margin-left: auto;
+      
+         
+      li{
+         margin-right: 1.5rem;
+         
+         a{
+            box-shadow: 0 0 0 1px rgb(253, 254, 255);
+            border-radius: 5rem;
+            background-color:rgba(46, 35, 35, 0.9);
+            color: rgb(19, 232, 247) !important;
+            &:hover{
+               background-color:rgb(19, 232, 247);
+               color: black;
+            }
+         }
+         
+      }
+      
+   }
+   
+}
+
+
+.nav2{
+   height: 5rem;
+   font-family: "Poppins";
+   font-weight: 500;
+   z-index: 3;
+   @media (max-width: 990px) {
+      bottom: 5px !important;
+   }
+   .right{
+         margin-left: auto;
+         padding-right: 2rem;
+         
+         a{
+            margin-left: 1rem;
+            background-color: rgb(19, 232, 247);
+            color: rgb(66, 65, 65) !important;
+            box-shadow: 0 0 0 1px rgb(253, 254, 255);
+            border-radius: 5rem;
+            background-color:rgba(46, 35, 35, 0.9);
+            color: rgb(19, 232, 247) !important;
+            &:hover{
+               background-color:rgb(19, 232, 247);
+               color: black !important;
+               
+            }
+            @media (max-width: 990px) {
+               padding-left: 1rem;
+               margin-bottom:.5rem  !important;
+               width: 8rem !important;
+               
+            }
+         }
+   }
+   .left{
+      margin-left: 1rem;
+      .dash{
+         color: white;
+         padding-top: 0.5rem;
+         @media (max-width: 990px) {
+            display: none;
+         }
+      }
+      a{ 
+         padding-left: 1rem !important;
+         color: white !important;
+         &:hover{
+            text-decoration: underline;
+         }
+      }
+   }
+
+}
+

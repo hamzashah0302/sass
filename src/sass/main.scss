@@ -1,0 +1,124 @@
+
+.intro {
+    padding: 2rem;
+    width: 100%;
+    height: 100%;
+    background-image: url("../assets//img/bg.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(141, 84, 84);
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+   
+    .upper{
+        .span {
+            color: aqua;
+        }
+        h1 {
+            color: white;
+        }
+        p{  padding-top: 2rem;
+            width: 55%;
+            word-spacing: .4rem;
+            color: white;
+            word-wrap:normal;
+        }
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        flex-grow: 2;
+        
+        .btntv {
+            .wh2 {
+                padding-inline-end: 4px;
+                padding-bottom: 0.5rem;
+            }
+            display: inline-block;
+            border: 1px solid #ffffff;
+            margin-top: 2rem;
+            border-radius: 2rem;
+            color: #5ff7ff;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+
+            font-weight: 500;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+
+        &:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 0.2rem;
+            z-index: -2;
+        }
+
+        &:before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            background-color: #5ff7ff;
+            transition: all 0.3s;
+            border-radius: 0.3rem;
+            z-index: -1;
+        }
+
+            @media (max-width: 767px) {
+                margin-top: 0;
+            }
+
+            &:hover {
+                color: #000000;
+
+            &::before {
+                width: 100%;
+                }
+            }
+        }
+    }
+    .lower{
+        flex-grow: 0;
+        display: flex;
+        align-items:center;
+        flex-direction: column;
+        color:white;
+        font-size: 1.2rem;
+    }
+    .labels{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: white;
+        margin-top: 3rem;
+        font-size: 1.2rem;
+        .powered-by{
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+            flex-direction: row;
+            // flex-wrap: wrap;
+
+        }
+    }
+}
+.home-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  .card {
+    background-color: #777;
+    display: flex;
+    margin: 1rem;
+  }
+}
